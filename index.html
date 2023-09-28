@@ -1,14 +1,61 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title></title>
-</head>
-<body>
+<HTML>
+
+  <HEAD>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <TITLE>Exemple : Formulaire + JavaScript</TITLE>
+  </HEAD>
   
-  <script src="./src/js/app.js" type="module"></script>
-</body>
-</html>
+  <BODY BGCOLOR="white" CLASS="page">
+  
+      <ul>
+          <li>A Faire:</li>
+          <li>on ne peut mettre que des chiffres</li>
+          <li>qté et prix unitaire modifiable</li>
+          <li>Calcul dès qu'on saisi un chiffre</li>
+          <li>Erreur si total commande = 0</li>
+          <li>Efface réinitialise le formulaire</li>
+      </ul>
+      <FORM NAME="form1">
+  
+  
+          <TABLE BORDER="1" CELLSPACING="0" BGCOLOR="#FFFFAA">
+              <TR BGCOLOR="#CCCCCC">
+                  <TH WIDTH=10%>Quantité
+                  <TD WIDTH=50%><B>Article</B>
+                  <TH WIDTH=15%>Prix unitaire
+                  <TH WIDTH=15%>Prix
+              <TR>
+                  <TH><INPUT TYPE="text" NAME="q1" SIZE=3 MAXLENGTH=2 style="text-align: center; ">
+                  <TD>Bureau
+                  <TH><INPUT TYPE="text" NAME="pu1" VALUE="450" SIZE=5 style="text-align: right; ">
+                  <TH><INPUT TYPE="text" NAME="p1" SIZE=8 style="text-align: right; ">
+              <TR>
+                  <TH><INPUT TYPE="text" NAME="q2" SIZE=3 MAXLENGTH=2 style="text-align: center; ">
+                  <TD>Chaises
+                  <TH><INPUT TYPE="text" NAME="pu2" VALUE="80" SIZE=5 style="text-align: right; ">
+                  <TH><INPUT TYPE="text" NAME="p2" SIZE=8 style="text-align: right; ">
+              <TR>
+                  <TH><INPUT TYPE="text" NAME="q3" SIZE=3 MAXLENGTH=2 style="text-align: center; ">
+                  <TD>Roulettes de chaises (paquet de 4)
+                  <TH><INPUT TYPE="text" NAME="pu3" VALUE="16.5" SIZE=5 style="text-align: right; ">
+                  <TH><INPUT TYPE="text" NAME="p3" SIZE=8 style="text-align: right; ">
+              <TR>
+                  <TD COLSPAN=3 ALIGN=right BGCOLOR="#CCCCCC"><B>Total TTC</B>&nbsp;&nbsp;&nbsp;
+                  <TH><INPUT TYPE="text" NAME="total" SIZE=8 style="text-align: right; ">
+          </TABLE>
+  
+          <P>
+              <input type="button" value=" Soumettre la commande ">
+  
+              <INPUT TYPE="RESET" VALUE="Effacer">
+  
+  
+      </FORM>
+  
+      <script src="./index.js" type="module"></script>
+  </BODY>
+  
+  </HTML>
